@@ -1,0 +1,31 @@
+.clients {
+    background-color: #F1F8FF;
+    padding: 90px 0 115px 0;
+
+    &__title {
+        color: #3677fd;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 90px;
+    }
+
+    &__link {}
+
+    &__img {
+        filter: grayscale(2);
+        opacity: 0.2;
+
+        &:hover {
+            filter: grayscale(0);
+            opacity: 1;
+        }
+    }
+
+    // &__pic {
+    //     display: flex;
+    //     align-self: center;
+    // }
+
+}

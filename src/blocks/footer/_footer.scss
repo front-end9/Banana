@@ -1,0 +1,41 @@
+.footer {
+    background-color: #356DFD;
+    text-align: center;
+    padding: 90px 90px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-image: url(Banana/dist/img/line.png);
+    }
+
+    &__title {
+        color: white;
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: 300;
+        // padding-right: 50px;
+    }
+
+    &__span {
+        color: white;
+        font-size: 50px;
+        line-height: 65px;
+        font-weight: 700;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        border: 1px solid white;
+        border-radius: 27px;
+        background-color: white;
+        color: #3695ff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        padding: 20px 70px;
+    }
+}

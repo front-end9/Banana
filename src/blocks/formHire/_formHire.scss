@@ -1,0 +1,69 @@
+.form {
+    &__input {
+        width: 100%;
+        color: black;
+        font-family: $font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 35px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        padding: 16px 20px;
+        outline: none;
+
+        @include placeholder {
+            opacity: 0.5;
+            color: #5a5a5a;
+            font-family: $font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        &:focus {
+            @include placeholder {
+                color: transparent;
+            }
+        }
+
+        &--textarea {
+            width: 100%;
+            color: black;
+            font-family: $font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+            border-radius: 15px;
+            padding: 16px 20px;
+            margin-bottom: 40px;
+
+            @include placeholder {
+                opacity: 0.5;
+                color: #5a5a5a;
+                font-family: $font;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1;
+            }
+
+            &:focus {
+                @include placeholder {
+                    color: transparent;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+        background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+        border-radius: 28px;
+        padding: 20px 40px;
+        outline: none;
+        cursor: pointer;
+    }
+}
