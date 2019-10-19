@@ -6,6 +6,9 @@
     &__wrapper {
         padding-top: 92px;
         padding-bottom: 194px;
+            @media screen and (max-width: 575px) {
+                padding-top: 20px;
+            }
     }
     &__header--title {
         color: #3677fd;
@@ -13,6 +16,12 @@
         font-size: 50px;
         font-weight: 300;
         margin-bottom: 130px;
+            @media screen and (max-width: 765px) {
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: 575px) {
+                margin-bottom: 0;
+            }
     }
     &__panel {
         width: 100%;

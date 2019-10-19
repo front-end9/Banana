@@ -1,0 +1,39 @@
+.cookies {
+
+    background-color: #194277;
+    position: top;
+    padding-top: 22px;
+    padding-bottom: 20px;
+
+
+
+    &__title {
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 36px;
+
+
+
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__accept {
+        background-color: white;
+        border-radius: 15px;
+        width: 112px;
+        height: 30px;
+        color: #194277;
+        font-family: 'Lato', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px;
+        display: block;
+    }
+
+
+}
