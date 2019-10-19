@@ -1,4 +1,8 @@
-include ../blocks/nav/_nav.pug
+//- include ../blocks/nav/_nav.pug
+include ../blocks/clients/_clients.pug
+include ../blocks/footer/_footer.pug
+include ../blocks/hire/_hire.pug
+include ../blocks/formHire/_formHire.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -11,6 +15,8 @@ html(lang="en")
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
         link(rel="stylesheet", href="./css/style.css")
     body
-        
+        +clients
+        +footer
+        +hire
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
         script(src="../node_modules/remodal/dist/remodal.js")
