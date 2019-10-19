@@ -2,21 +2,23 @@ mixin header
     .header
         .container
             .header__nav
-                input.nav__checkbox(type="checkbox" id="burger")
-                label.nav__burger(for="burger")
-                        i.nav__icon(class="fas fa-bars")
-                        i.nav__times(class="fas fa-times")
-                ul.nav__list
-                     li.nav__item
-                     a.nav__link(href="#")
-                     li.nav__item
-                     a.nav__link(href="#")
-                     li.nav__item
-                     a.nav__link(href="#")
-                     li.nav__item
-                     a.nav__link(href="#")
-                     li.nav__item
-                     a.nav__link(href="#")
+                input.header__checkbox(type="checkbox" id="burger")
+                label.header__burger(for="burger")
+                    i.header__icon(class="fas fa-bars")
+                    i.header__times(class="fas fa-times")
+            
+                ul.header__list.d-flex.justify-content-center.flex-column.align-content-center.align-items-center
+                    li.header__item
+                        a.header__link(href="#") About Me
+                    li.header__item
+                        a.header__link(href="#") Services
+                    li.header__item
+                        a.header__link(href="#") My Works 
+                    li.header__item
+                        a.header__link(href="#") Clients
+                    li.header__item
+                        a.header__link(href="#") dd
+
         .container
             .header__desc.d-flex.justify-content-center
                 .header__logo
