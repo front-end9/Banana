@@ -7,6 +7,10 @@
     &__wrapper {
         padding-top: 91px;
         padding-bottom: 15px;
+
+        @media screen and (max-width: 575px) {
+            padding-top: 25px;
+        }
     }
 
     &__heading {
@@ -14,6 +18,10 @@
         font-size: 50px;
         font-weight: 300;
         margin-bottom: 116px;
+
+        @media screen and (max-width: 575px) {
+        margin-bottom: 50px;
+        }
     }
 
     &__panel-circle {
@@ -52,6 +60,10 @@
         text-align: center;
         padding-bottom: 99px;
         line-height: 32px;
+
+        @media screen and (max-width: 575px) {
+            padding-bottom: 50px;
+        }
     }
 
     &__panel-icon {
