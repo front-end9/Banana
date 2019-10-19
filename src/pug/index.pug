@@ -1,4 +1,6 @@
 include ../blocks/expert/_expert.pug
+include ../blocks/latestworks/_latestworks.pug
+include ../blocks/about/_about.pug
 
 <!DOCTYPE html>
 html(lang="en")
@@ -11,6 +13,8 @@ html(lang="en")
         link(rel="stylesheet", href="../node_modules/remodal/dist/remodal-default-theme.css")
         link(rel="stylesheet", href="./css/style.css")
     body
-    +expert
+        +about
+        +expert
+        +latestworks
         script(src="https://code.jquery.com/jquery-3.4.1.min.js")
         script(src="../node_modules/remodal/dist/remodal.js")

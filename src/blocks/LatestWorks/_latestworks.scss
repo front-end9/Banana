@@ -1,0 +1,24 @@
+.latestworks {
+    // background-image: url(/dist/img/LatestWorks.png);
+    // background-repeat: no-repeat;
+    // background-position: top;
+
+    &__wrapper {
+        padding-top: 92px;
+        padding-bottom: 194px;
+    }
+    &__header--title {
+        color: #3677fd;
+        font-family: Lato, sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        margin-bottom: 130px;
+    }
+    &__panel {
+        width: 100%;
+        height: 270px;
+    }
+    &__panel:hover {
+        background-color: #f4f4f4;
+    }
+}
