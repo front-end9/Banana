@@ -1,7 +1,10 @@
 .header {
-    background-image: url(/dist/img/Prostokąt1.png);
-    position: center center;
+
+    background-image: url(/dist/img/header__bg.png);
+    background-position: top, center;
     background-size: cover;
+    text-align: center;
+    padding-bottom: 148px;
 
     &__desc {
         flex-wrap: wrap;
@@ -15,8 +18,7 @@
         line-height: 60px;
         text-transform: uppercase;
         text-align: center;
-        padding-left: 164px;
-        padding-right: 166px;
+        margin-bottom: 42px;
 
     }
 
@@ -27,9 +29,8 @@
         font-weight: 300;
         line-height: 35px;
         text-transform: uppercase;
-        padding-left: 187px;
-        padding-right: 188px;
         text-align: center;
+        margin-bottom: 74px;
     }
 
     &__logo {
@@ -38,6 +39,33 @@
         background-color: white;
         border: 3px solid white;
         border-radius: 50%;
+        position: relative;
+        z-index: 2;
+        top: 19px;
+        left: 83px;
+    }
+
+    &__logo2 {
+        width: 164px;
+        height: 164px;
+        opacity: 0.09;
+        background-color: white;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: relative;
+        top: 10px;
+        left: -72px;
+        margin-bottom: 60px;
+    }
+
+    &__logo3 {
+        width: 185px;
+        height: 185px;
+        opacity: 0.06;
+        background-color: white;
+        border: 3px solid white;
+        border-radius: 50%;
+        position: absolute;
     }
 
     &__btn {
@@ -45,6 +73,7 @@
         height: 55px;
         background-color: white;
         border-radius: 28px;
+        border: none;
         color: #3695ff;
         font-family: 'Lato', sans-serif;
         font-size: 16px;
@@ -53,17 +82,28 @@
         text-transform: uppercase;
     }
 
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-top: 20px;
+        position: relative;
+        padding-bottom: 55px;
+    }
+
     &__icon {
-        color: #262626;
+        color: white;
         font-size: 25px;
+        margin-right: 10px;
     }
 
     &__times {
-        color: #262626;
-        font-size: 25px;
-        z-index: 2;
-        position: relative;
 
+        font-size: 25px;
+        z-index: 5;
+        position: relative;
+        color: #4B98FE;
+        margin-right: 10px;
     }
 
     &__checkbox {
@@ -88,25 +128,83 @@
 
     .header__list {
         overflow: hidden;
-        z-index: 1;
+        z-index: 4;
         padding-top: 0;
         height: 0;
         transition: ease .3s;
         background-color: white;
         border-radius: 10px;
         position: absolute;
-        top: 0;
+        top: 11px;
         left: 0;
         width: 100%;
         border: none;
-        width: 1170px;
+
 
     }
 
     .header__checkbox:checked+.header__burger+&__list {
         display: block;
-        padding-top: 115px;
-        height: 331px;
+
+        height: 588px;
     }
 
+    &__hr {
+
+        width: 396px;
+        height: 1px;
+        opacity: 0.2;
+        background-color: #194277;
+        margin-bottom: 44px;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 98px;
+        color: #d2d2d2;
+    }
+
+    &__link:hover {
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 98px;
+        color: #3677fd;
+    }
+
+    &__item:last-child {
+        margin-bottom: 80px;
+    }
+
+    &__linkage {
+        text-decoration: none;
+        display: block;
+        color: white;
+        width: 51px;
+        height: 51px;
+        background-color: #e1e1e1;
+        border-radius: 50%;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 7px;
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__soc {
+        margin-right: 30px;
+    }
+
+    &__linkage:hover {
+        background-color: #367BFD;
+    }
 }
